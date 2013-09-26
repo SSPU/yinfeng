@@ -1,8 +1,8 @@
 class NoteMailer < ActionMailer::Base
-  default from: "todo@gmail.com"
+  default from: "yfzb888@gmail.com"
 
   def note_email(note)
     @note = note
-    mail(to: 'todo@gmail.com', subject: 'new note')
+    mail(to: 'yfzb888@gmail.com', subject: 'New Note')
   end
 end
