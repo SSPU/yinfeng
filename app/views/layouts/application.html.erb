@@ -1,47 +1,16 @@
-  <%# stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <%# javascript_include_tag "application", "data-turbolinks-track" => true %>
-  <%# csrf_meta_tags %>
-
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title><%= @title %></title>
 <meta name="keywords" content="上海银俸资产管理有限公司 "/>
 <meta name="description" content="上海银俸资产管理有限公司 "/>
-<link rel="stylesheet" type="text/css" href="/assets/jquery.slider.css"/>
-<link rel="stylesheet" type="text/css" href="/assets/reset.css"/>
-<script src="/assets/jquery.js"></script>
-<script src="/assets/jquery.slider.min.js"></script>
-<style type="text/css">
-body,td,th {font-size:12px; color: #000; -webkit-text-size-adjust:none;}
-body {margin-left: 0px;margin-top: 0px;margin-right: 0px;margin-bottom: 0px;background-color: #f3f3f3;}
-a:link {color: #000;text-decoration: none;}
-a:visited {color: #000;text-decoration: none;}
-a:hover {color: #e60012;text-decoration: none;}
-a:active {color: #e60012;text-decoration: none;}
+<%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+<%# stylesheet_link_tag 'jquery.slider', 'data-turbolinks-track' => true %>
+<%# stylesheet_link_tag 'reset', 'data-turbolinks-track' => true %>
+<%= javascript_include_tag 'jquery', 'data-turbolinks-track' => true %>
+<%= javascript_include_tag 'jquery.slider.min', 'data-turbolinks-track' => true %>
 
-a.lok:link {color: #595757;text-decoration: none;}
-a.lok:visited {color: #595757;text-decoration: none;}
-a.lok:hover {color: #e60012;text-decoration: none;}
-a.lok:active {color: #e60012;text-decoration: none;}
-
-.ctitle{font-size:16px; color:#000; font-weight:bold; line-height:normal;}
-.crong{font-size:16px; color:#666666; line-height:28px;}
-.homtop{top:0; left:0; width:100%; position:absolute; text-align:center}
-.top{margin:0 auto; width:1000px;}
-.jingpin li{float:left;width:210px; height:73px;}
-.jingpin li{float:left; background:url(/assets/new_bg.png) no-repeat; width:194px; height:57px; padding:8px;line-height:18px;white-space:normal; word-wrap: break-word; word-break: break-all;overflow: hidden;}
-.jingpinnn{float:left; background:url(/assets/new_bg.png) no-repeat; width:194px; height:57px; padding:8px;line-height:18px;white-space:normal; word-wrap: break-word; word-break: break-all;overflow: hidden;}
-.jquery-slider-selector{display:none;}
-.jquery-slider-control{display:none;}
-.jquery-slider-navigation-next{ background:url(/assets/right.png) no-repeat; height:12px; width:12px; top:-20px; left:-5px; position:absolute; z-index:99}
-.jquery-slider-navigation-next:hover{ background:url(/assets/right.png) no-repeat; height:12px; width:12px;}
-.jquery-slider-navigation-prev{ background:url(/assets/left.png) no-repeat; height:12px; width:12px; top:-20px; left:-95px; position:absolute;z-index:99}
-.jquery-slider-navigation-prev:hover{ background:url(/assets/left.png) no-repeat; height:12px; width:12px;}
-.lokce{border: 1px #4a4747 solid; width:300px; background-color:#f3f3f3; }
-</style>
 <script type="text/javascript">
 function MM_swapImgRestore() { //v3.0
   var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
@@ -65,64 +34,8 @@ function MM_swapImage() { //v3.0
    if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
 }
 </script>
-<script type="text/javascript">
-var $isAndroid=navigator.userAgent.match(/Android/i);
-var $iPhone=navigator.userAgent.match(/iPhone/i);
-if($iPhone){
-	//alert(1);
-   //location.href='/home.htm';
-   $(".homtop").hide();
-}else if($isAndroid){
-	$(".homtop").hide();
-	//alert(0);
-	//alert(0);
-   //location.href='/home.htm';
-}
-//alert($(".homtop").html());
-//$(".homtop").hide();
-//$(".homtop").html("<img src=\"/assets/logo.png\" width=\"122\" height=\"44\">");
-</script>
 </head>
 <body>
-<script src="/assets/jquery.js"></script>
-<script src="/assets/jquery.slider.min.js"></script>
-<style type="text/css">
-<!--
-body {
-	margin-left: 0px;
-	margin-top: 0px;
-	margin-right: 0px;
-	margin-bottom: 0px;
-}
-ul{padding:0; margin:0;}
-#menu{z-index:2; position:absolute;background:url(/assets/top_bg_01.png) no-repeat center left; top:0; margin: 0 auto; width:1000px;position: relative;}
-li{display:list-item; float:left; list-style:none;}
-#menu .menu_main{width:1000px;height:100px; }
-.menu_lisr{position:absolute; padding-left:20px; padding-top:20px; font-size:9px; color:#595757}
-.menu_list{font-weight:bold;width:1000px;}
-.menu_list li{cursor: pointer;float:left; height:50px; width:auto; padding-left:22px; padding-top:52px;}
-.menu_list li a{ color:#666666; font-size:14px; margin-top:10px;}
-
-.lokcl{ background-image:url(/assets/topde.gif);}
-
-.mini_menu{position: absolute;  height:80px; top:62px;left: -380px; display:none; z-index:99; }
-.mini_menu li{height:40px; line-height:40px; padding:0 10px; width:auto; margin-top:8px;}
-.mini_menu li a{color:#434343; font-size:12px}
-
-a:link {
-	text-decoration: none;
-}
-a:visited {
-	text-decoration: none;
-}
-a:hover {
-	text-decoration: none;
-}
-a:active {
-	text-decoration: none;
-}
--->
-</style>
 <script>
 			$(document).ready(function(){
 				$("#menu ul li").hover(
@@ -161,13 +74,13 @@ a:active {
 				$(".mini_menu").css("opacity","0.8");
 				$(".mini_menu li").css("opacity","1");
             });
-        </script>
+</script>
 
 <div id="menu">
 <div class="menu_main">
 <div class="menu_lisr">
      <ul>
-     <li style="width:20px"><a href="/home.htm"><%= image_tag 'licjao.png', border: 0 %></a></li>
+     <li style="width:20px"><a href="/home"><%= image_tag 'licjao.png', border: 0 %></a></li>
      <li style="padding-top:5px;">中文</li>
      <li style=" width:10px; text-align:center;padding-top:5px;">|</li>
      <li style="padding-top:5px;">English</li>
@@ -175,22 +88,22 @@ a:active {
 </div>
 <div class="menu_list">
                         <ul>
-                            <li>	<a href="/about.htm">关于银俸</a><font color="#cccccc">&nbsp;&nbsp;|</font>   </li>
-                            <li>	<a href="/product.htm">产品专区</a><font color="#cccccc">&nbsp;&nbsp;|</font> </li>
-							 <li>	<a href="/service.htm">客服中心</a><font color="#cccccc">&nbsp;&nbsp;|</font>
+                            <li>	<a href="/about">关于银俸</a><font color="#cccccc">&nbsp;&nbsp;|</font>   </li>
+                            <li>	<a href="/product">产品专区</a><font color="#cccccc">&nbsp;&nbsp;|</font> </li>
+							 <li>	<a href="/service">客服中心</a><font color="#cccccc">&nbsp;&nbsp;|</font>
 							 <div class="mini_menu" style="left:100px; width:738px">
                                 	<ul>
-                                        <li style="width:8px;overflow: hidden;FLOAT: left;padding:0;"><img src="/assets/lokc_2.gif"/></li>
-                                        <li style="background-color:#FFF;"><a href="/service.htm">服务理念</a></li>
-                                        <li style="background-color:#FFF;"><a href="/buyguide.htm">产品购买指南</a></li>
-                                        <li style="background-color:#FFF;"><a href="/contactlist.htm">联系方式</a></li>
+                                        <li style="width:8px;overflow: hidden;FLOAT: left;padding:0;"><%= image_tag 'lokc_2.gif' %></li>
+                                        <li style="background-color:#FFF;"><a href="/service">服务理念</a></li>
+                                        <li style="background-color:#FFF;"><a href="/buyguide">产品购买指南</a></li>
+                                        <li style="background-color:#FFF;"><a href="/contactlist">联系方式</a></li>
                                         <li style="background-color:#FFF;"><a href="/notes/new">在线留言</a></li>
-                                        <li style="width:8px;overflow: hidden;FLOAT: left;padding:0;"><img src="/assets/lokc_1.gif"/></li>
+                                        <li style="width:8px;overflow: hidden;FLOAT: left;padding:0;"><%= image_tag 'lokc_1.gif' %></li>
                                     </ul>
                                 </div>
 							  </li>
 							<li>	<a href="/#">银俸财富</a><font color="#cccccc">&nbsp;&nbsp;|</font> </li>
-                            <li>  	<a href="/#">加入我们</a><font color="#cccccc">&nbsp;&nbsp;| </li>
+                            <li>  	<a href="/joinus">加入我们</a><font color="#cccccc">&nbsp;&nbsp;| </li>
                           
                         </ul>
     </div>
@@ -202,45 +115,26 @@ a:active {
 <table width="1000" border="0" align="center" cellpadding="0" cellspacing="0" style="margin:0 auto;position: relative;top: 50px;" >
   <tr>
     <td height="23">
-	<!-- Baidu Button BEGIN -->
 		
         <table width="100%" border="0" cellspacing="0" cellpadding="0">
-  <tr>
-    <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
-  <tr>
-    <td height="8"></td>
-  </tr>
-  <tr>
-    <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
-  <tr>
-    <td height="8"></td>
-  </tr>
-  
-</table>
-</td>
-  </tr>
-</table>
-</td>
+          <tr>
 
-    <td align="center" style=" line-height:18px;"><span style="font-size:10px; font-family:Arial; color:#4c4c4c;">版权属上海银俸资产管理有限公司 所有</span>&nbsp;<a href="/#" target="_blank" style="font-size:10px; font-family:Arial; color:#4c4c4c;">网站使用条款和条件</a>
-		<a href="/#" target="_blank" style="font-size:10px; font-family:Arial; color:#4c4c4c;">法律法规</a>
-		<a href="/#" target="_blank" style="font-size:10px; font-family:Arial; color:#4c4c4c;">网站地图</a><br /><span style="font-size:10px; font-family:Arial; color:#4c4c4c;">
-			客服热线：xxxxxxxx&nbsp;&nbsp;
-			公司邮箱：xxxxxx&nbsp;&nbsp;
-			投诉热线：xxxxxxxx&nbsp;&nbsp;
-			黑ICP备08000158号&nbsp;&nbsp;
-			京公网安备110102005830</span>
+    <td align="center" style=" line-height:18px;">
+      <span style="font-size:10px; font-family:Arial; color:#4c4c4c;">版权属上海银俸资产管理有限公司 所有</span>&nbsp;
+      <a href="/#" target="_blank" style="font-size:10px; font-family:Arial; color:#4c4c4c;">网站使用条款和条件</a>
+		  <a href="/#" target="_blank" style="font-size:10px; font-family:Arial; color:#4c4c4c;">法律法规</a>
+		  <a href="/#" target="_blank" style="font-size:10px; font-family:Arial; color:#4c4c4c;">网站地图</a><br/>
+      <span style="font-size:10px; font-family:Arial; color:#4c4c4c;">
+			客服热线：021-63068077&nbsp;&nbsp;
+			公司邮箱：yinfengzg@yinfengzg.com&nbsp;&nbsp;
+			投诉热线：021-63068013&nbsp;&nbsp;
+			</span>
 		</td>
-  </tr>
-</table>
 
-		<script type="text/javascript" id="bdshare_js" data="type=tools&amp;mini=1&amp;uid=0" ></script>
-		<script type="text/javascript" id="bdshell_js"></script>
-		<script type="text/javascript">
-		document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/style/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000)
-		</script>
-		<!-- Baidu Button END -->
-	</td>
+          </tr>
+        </table>
+
+	  </td>
   </tr>
 </table>
 <script>

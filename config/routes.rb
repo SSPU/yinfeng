@@ -4,9 +4,19 @@ Mailnote::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
+    root 'nav#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
+      get 'home'        => 'nav#home'
+      get 'about'       => 'nav#about'
+      get 'product'     => 'nav#product'
+      get 'service'     => 'nav#service'
+      get 'joinus'      => 'nav#joinus'
+      get 'buyguide'    => 'nav#buyguide'
+      get 'contactlist' => 'nav#contactlist'
+
+      get 'ouyaguoji'   => 'nav#ouyaguoji'
 
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase

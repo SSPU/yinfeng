@@ -1,0 +1,64 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+body,td,th {font-size:12px; color: #000; -webkit-text-size-adjust:none;}
+body {margin-left: 0px;margin-top: 0px;margin-right: 0px;margin-bottom: 0px;background-color: #f3f3f3;}
+a:link {color: #000;text-decoration: none;}
+a:visited {color: #000;text-decoration: none;}
+a:hover {color: #e60012;text-decoration: none;}
+a:active {color: #e60012;text-decoration: none;}
+
+a.lok:link {color: #595757;text-decoration: none;}
+a.lok:visited {color: #595757;text-decoration: none;}
+a.lok:hover {color: #e60012;text-decoration: none;}
+a.lok:active {color: #e60012;text-decoration: none;}
+
+.ctitle{font-size:16px; color:#000; font-weight:bold; line-height:normal;}
+.crong{font-size:16px; color:#666666; line-height:28px;}
+.homtop{top:0; left:0; width:100%; position:absolute; text-align:center}
+.top{margin:0 auto; width:1000px;}
+.jingpin li{float:left;width:210px; height:73px;}
+.jingpin li{float:left; background: url(<%= asset_path 'new_bg.png' %>) no-repeat; width:194px; height:57px; padding:8px;line-height:18px;white-space:normal; word-wrap: break-word; word-break: break-all;overflow: hidden;}
+.jingpinnn{float:left; background: url(<%= asset_path 'new_bg.png' %>) no-repeat; width:194px; height:57px; padding:8px;line-height:18px;white-space:normal; word-wrap: break-word; word-break: break-all;overflow: hidden;}
+.jquery-slider-selector{display:none;}
+.jquery-slider-control{display:none;}
+.jquery-slider-navigation-next{ background: url(<%= asset_path 'right.png' %>) no-repeat; height:12px; width:12px; top:-20px; left:-5px; position:absolute; z-index:99}
+.jquery-slider-navigation-next:hover{ background: url(<%= asset_path 'right.png' %>) no-repeat; height:12px; width:12px;}
+.jquery-slider-navigation-prev{ background: url(<%= asset_path 'left.png' %>) no-repeat; height:12px; width:12px; top:-20px; left:-95px; position:absolute;z-index:99}
+.jquery-slider-navigation-prev:hover{ background: url(<%= asset_path 'left.png' %>) no-repeat; height:12px; width:12px;}
+.lokce{border: 1px #4a4747 solid; width:300px; background-color:#f3f3f3; }
+.STYLE1 {
+	font-size: 18px;
+	font-weight: bold;
+}
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+ul{padding:0; margin:0;}
+#menu{z-index:2; position:absolute;background:url(<%= asset_path 'top_bg_01.png' %>) no-repeat center left; top:0; margin: 0 auto; width:1000px;position: relative;}
+li{display:list-item; float:left; list-style:none;}
+#menu .menu_main{width:1000px;height:100px; }
+.menu_lisr{position:absolute; padding-left:20px; padding-top:20px; font-size:9px; color:#595757}
+.menu_list{font-weight:bold;width:1000px;}
+.menu_list li{cursor: pointer;float:left; height:50px; width:auto; padding-left:22px; padding-top:52px;}
+.menu_list li a{ color:#666666; font-size:14px; margin-top:10px;}
+
+.lokcl{ background:url(<%= asset_path 'topde.gif' %>);}
+
+.mini_menu{position: absolute;  height:80px; top:62px;left: -380px; display:none; z-index:99; }
+.mini_menu li{height:40px; line-height:40px; padding:0 10px; width:auto; margin-top:8px;}
+.mini_menu li a{color:#434343; font-size:12px}
+
