@@ -8,6 +8,11 @@ DEPLOYMENT INSTRUCTIONS
 
     git clone https://github.com/SSPU/yinfeng.git
 
+    -----------------------------
+    copy config/environments/*
+    copy public/files/*
+    -----------------------------
+
     bundle install
 
     RAILS_ENV=production rake db:migrate
