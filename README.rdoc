@@ -21,9 +21,13 @@ DEPLOYMENT INSTRUCTIONS
 
     passenger stop -p 8000
 
+    RAILS_ENV=production bin/delayed_job stop
+
     git pull origin master
 
     RAILS_ENV=production bundle exec rake assets:precompile
 
     RAILS_ENV=production passenger start -p 8000 > /dev/null & disown
+
+    RAILS_ENV=production bin/delayed_job start
 

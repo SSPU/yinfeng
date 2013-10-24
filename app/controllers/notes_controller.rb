@@ -1,6 +1,5 @@
 class NotesController < ApplicationController
 
-
   def show
     @title = '客服中心_上海银俸资产管理有限公司'
     @note = Note.find(params[:id])
@@ -15,7 +14,7 @@ class NotesController < ApplicationController
     @note = Note.new(note_params)
 
     @note.save!
-    NoteMailer.note_email(@note).deliver
+    NoteMailer.delay.note_email(@note)
     redirect_to @note
   end
 

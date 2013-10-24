@@ -46,3 +46,13 @@ gem 'capistrano'
 
 # Use Passenger
 gem 'passenger', group: :production
+
+####################### 
+#   Use Delayed_Job   #   
+####################### 
+# rails generate delayed_job:active_record
+# RAILS_ENV=production bin/delayed_job start
+# RAILS_ENV=production bin/delayed_job stop
+gem 'daemons'
+gem 'delayed_job_active_record'
+gem 'delayed_job', '~> 4.0.0'
