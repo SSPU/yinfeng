@@ -47,6 +47,9 @@ gem 'capistrano'
 # Use Passenger
 gem 'passenger', group: :production
 
+# Meta tag for SEO
+gem 'meta-tags', :require => 'meta_tags'
+
 ####################### 
 #   Use Delayed_Job   #   
 ####################### 
