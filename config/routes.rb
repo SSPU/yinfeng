@@ -16,7 +16,8 @@ Mailnote::Application.routes.draw do
       get 'buyguide'    => 'nav#buyguide'
       get 'contactlist' => 'nav#contactlist'
 
-      get 'ouyaguoji'   => 'nav#ouyaguoji'
+      # Out of Date Links
+      #get 'ouyaguoji'   => 'nav#ouyaguoji'
 
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
